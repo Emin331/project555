@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial;
+    background-color: #f5f5f5;
+}
+header
+{
+    background-color: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style:none ;
+    gap: 25px;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: yellow;
+}
+button
+{
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+button:hover{
+    background-color: red;
+}
+.hero
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    
+}
+.hero-text {
+    width: 45%;
+}
+.hero-text h1{
+    margin-bottom: 20px;
+}
+.hero-text p{
+    margin-bottom: 20px;
+}
+.hero-image img{
+    width:400px;
+    border-radius: 15px;
+}
+.cards
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: aquamarine;
+    padding: 40px;
+}
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px gray;
+}
+.card:hover{
+    transform: scale(1.06);
+}
+.grid-section
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.box
+{
+    background-color: aqua;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(209, 180, 180);
+    padding: 40px;
+}
+.lists ul,
+.lists ol{
+    margin-top: 20px;
+}
+.lists li{
+    margin: 10px 0;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 40px auto;
+    gap: 15px;
+}
+input,textarea{
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+}

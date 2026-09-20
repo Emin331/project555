@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+    transition: 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: relative;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card.active {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* GRID */
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    background: #3498db;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box.clicked {
+    background: #2ecc71;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 40px auto;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+.menu-toggle {
+    display: none;
+}
